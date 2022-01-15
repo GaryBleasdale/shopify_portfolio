@@ -3486,3 +3486,8 @@ to
     padding-bottom:50px;
   }
 }
+
+button {
+  padding: 10px;
+  color:white; 
+}
