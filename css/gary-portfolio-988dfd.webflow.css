@@ -1023,15 +1023,21 @@ figure {
 }
 
 .project-wrapper {
-  width: 33.333%;
-  padding: 16px;
+  width: 100%;
+  padding: 95px 0px;
+  display:flex;
+  align-items: center;
 }
+
+
 
 .project-img {
   position: relative;
   overflow: hidden;
   margin-top: 0px;
   margin-bottom: 0px;
+  width: 100%;
+  /* border: solid darkblue 1px; */
 }
 
 .project-img-overlay {
@@ -1042,7 +1048,7 @@ figure {
   bottom: 0px;
   display: none;
   width: 0%;
-  background-color: #4830e6;
+  background-color: rgba(72, 48, 230, 0.85);
 }
 
 .project-title {
@@ -1053,14 +1059,18 @@ figure {
 }
 
 .project-title.listing {
-  position: absolute;
-  left: 16px;
-  bottom: 8px;
-  display: inline-block;
-  color: #fff;
-  font-size: 18px;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title.listing h1{
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 70px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: bold; 
 }
 
 .plus-icon {
@@ -3490,4 +3500,60 @@ to
 button {
   padding: 10px;
   color:white; 
+}
+
+.project-text{
+  width:50%;
+  text-align:center;
+}
+
+.project-text li{
+  list-style-type:square;
+  text-align:left;
+  line-height:2;
+  font-size:18px;
+}
+
+.project-text h5{
+  opacity:0.8;
+  font-size:22px;
+}
+
+.text-right{
+  padding-left:35px;
+}
+
+@media screen and (max-width: 991px) {
+  .project-wrapper {
+    width: 100%;
+    padding: 55px 0px;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .project-text{
+    width:80%;
+    text-align:center;
+  }
+}
+
+@media screen and (max-width: 763px) {
+  .project-wrapper {
+    width: 100%;
+    padding: 55px 0px;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .project-text{
+    width:100%;
+    text-align:left;
+  }
+}
+
+.img-overlay-arrow{
+  filter: invert(96%) sepia(5%) saturate(0%) hue-rotate(291deg) brightness(104%) contrast(105%);
+  height:40px;
+  width:40px;
+
 }
