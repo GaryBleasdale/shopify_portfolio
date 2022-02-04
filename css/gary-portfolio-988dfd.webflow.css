@@ -10,7 +10,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #000026;
-  font-size: 48px;
+  font-size: 64px;
   line-height: 54px;
   font-weight: 400;
 }
@@ -857,8 +857,9 @@ figure {
 .hero-title {
   display: inline;
   margin-top: 0px;
-  font-size: 54px;
-  line-height: 60px;
+  font-size: 64px;
+  line-height: 76px;
+  font-weight: bold;
 }
 
 .text-bg-accent {
@@ -2443,7 +2444,7 @@ project-header-left h1{
   }
 
   .hero-title {
-    font-size: 51px;
+    font-size: 36px;
   }
 
   .social-block {
@@ -2746,7 +2747,7 @@ project-header-left h1{
   }
 
   .hero-title {
-    font-size: 48px;
+    font-size: 36px;
     line-height: 54px;
   }
 
@@ -3556,4 +3557,59 @@ button {
   height:40px;
   width:40px;
 
+}
+
+#highlight{
+  background-color: black;
+  color:white;
+  padding-left:0px;
+}
+
+.hero-cta {
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+  margin-right: 16px;
+  padding: 15px 32px;
+  border-radius: 5px;
+  background-color: #4830e6;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.hero-cta:hover {
+  opacity:0.8;
+}
+
+.hero-cta-secondary {
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+  margin-right: 16px;
+  padding: 15px 32px;
+  border:1px solid rgba(72, 48, 230,0.5);
+  border-radius: 5px;
+  color: rgba(72, 48, 230);
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.hero-cta-secondary:hover{
+  background-color: rgba(72, 48, 230,0.1);
+  color: rgb(51, 23, 233);
+  border:none;
 }
