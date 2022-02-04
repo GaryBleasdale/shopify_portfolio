@@ -114,7 +114,7 @@ figure {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1800px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 32px;
@@ -730,6 +730,7 @@ figure {
   top: 0px;
   right: 0px;
   z-index: 998;
+  max-width:1600px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -747,12 +748,19 @@ figure {
   align-items: center;
   border-bottom: 1px solid #e2e3e7;
   background-color: #fff;
+  max-width: 1800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 32px;
+  padding-left: 32px;
+
 }
 
 .navbar.transparent {
   position: absolute;
   border-bottom: 0px none transparent;
   background-color: transparent;
+  height:100px;
 }
 
 .logo-line {
@@ -831,7 +839,7 @@ figure {
 .hero-img {
   position: relative;
   z-index: 1;
-  max-height: 485px;
+  max-height: 100vh;
 }
 
 .hero-img-backdrop {
@@ -889,6 +897,9 @@ figure {
 .hero-paragraph {
   max-width: 90%;
   margin-bottom: 80px;
+  font-size:20px;
+  line-height: 37px;
+  letter-spacing:1px;
 }
 
 .scroll-down-block {
@@ -2233,7 +2244,7 @@ project-header-left h1{
 }
 
 .image-2 {
-  max-width: 150px;
+  max-width: 300px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -3574,7 +3585,7 @@ button {
   border-radius: 5px;
   background-color: #4830e6;
   -webkit-transition: background-color 200ms ease;
-  transition: background-color 200ms ease;
+  transition: all 300ms ease;
   color: #fff;
   font-size: 20px;
   line-height: 26px;
@@ -3586,6 +3597,7 @@ button {
 
 .hero-cta:hover {
   opacity:0.8;
+  transition: all 200ms ease;
 }
 
 .hero-cta-secondary {
@@ -3598,7 +3610,7 @@ button {
   border-radius: 5px;
   color: rgba(72, 48, 230);
   -webkit-transition: background-color 200ms ease;
-  transition: background-color 200ms ease;
+  transition: background-color 300ms ease;
   background-color: #fff;
   font-size: 20px;
   line-height: 26px;
@@ -3612,4 +3624,5 @@ button {
   background-color: rgba(72, 48, 230,0.1);
   color: rgb(51, 23, 233);
   border:none;
+  transition: background-color 200ms ease;
 }
