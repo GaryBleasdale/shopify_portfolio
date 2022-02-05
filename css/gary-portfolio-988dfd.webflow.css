@@ -123,6 +123,7 @@ figure {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  overflow:none;
 }
 
 .container.numbers-flex {
@@ -636,6 +637,7 @@ figure {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  padding-left:25px;
 }
 
 .nav-link {
@@ -725,19 +727,19 @@ figure {
 }
 
 .navbar {
-  position: relative;
+  position:fixed;
   left: 0px;
   top: 0px;
   right: 0px;
   z-index: 998;
-  max-width:1600px;
+
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 80px;
-  padding-right: 4%;
-  padding-left: 4%;
+
+
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -748,19 +750,19 @@ figure {
   align-items: center;
   border-bottom: 1px solid #e2e3e7;
   background-color: #fff;
-  max-width: 1800px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 32px;
-  padding-left: 32px;
 
+  
 }
 
 .navbar.transparent {
-  position: absolute;
+  background-color: white;
   border-bottom: 0px none transparent;
-  background-color: transparent;
-  height:100px;
+  height:80px;
+
+  width:100vw;
+
 }
 
 .logo-line {
@@ -2147,6 +2149,7 @@ figure {
   grid-template-columns: 1fr 0.25fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+  overflow:none;
 }
 
 .hero-col-right {
@@ -2415,12 +2418,9 @@ project-header-left h1{
     width: 32px;
   }
 
-  .navbar {
-    padding-right: 5%;
-    padding-left: 5%;
-  }
 
   .hero-section {
+    min-height:80vh;
     padding-right: 32px;
     padding-left: 32px;
     -webkit-box-orient: vertical;
@@ -2428,6 +2428,7 @@ project-header-left h1{
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    overflow:none;
   }
 
   .blue-shape-hero {
@@ -3585,7 +3586,7 @@ button {
   border-radius: 5px;
   background-color: #4830e6;
   -webkit-transition: background-color 200ms ease;
-  transition: all 300ms ease;
+  transition: all 300ms ease-in;
   color: #fff;
   font-size: 20px;
   line-height: 26px;
@@ -3596,8 +3597,8 @@ button {
 }
 
 .hero-cta:hover {
-  opacity:0.8;
-  transition: all 200ms ease;
+  background-color: rgba(72, 48, 230,0.7);
+  transition: background-color 100ms ease-in;
 }
 
 .hero-cta-secondary {
@@ -3625,4 +3626,35 @@ button {
   color: rgb(51, 23, 233);
   border:none;
   transition: background-color 200ms ease;
+}
+
+.header-links{
+  display:flex;
+  color:black;
+  width:400px;
+  justify-content: space-between;
+  width:65%;
+  align-items:center;
+}
+
+.header-links>a{
+  display:flex;
+  color:black;
+
+
+}
+
+.nav-width-limit{
+  width:94%;
+  max-width:1736px;
+  display:flex;
+  padding-left:48px;
+  justify-content: space-between;
+}
+
+.navbar-cta{
+  background-color: rgba(72, 48, 230,0.3);
+  padding:7px 13px;
+  border-radius: 5px;
+  font-size: 16px;
 }
