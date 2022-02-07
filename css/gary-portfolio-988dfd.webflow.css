@@ -3668,10 +3668,26 @@ button {
 
 .navbar-cta{
   background-color: rgba(72, 48, 230,0.3);
-  padding:7px 13px;
+  padding:15px 20px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight:bold;
 }
+
+.navbar-cta{
+  background-color: rgba(72, 48, 230,0.3);
+  padding:15px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight:bold;
+  transition: all 400ms ease;
+}
+
+.navbar-cta:hover{
+  background-color: rgba(72, 48, 230, 0.137);
+  transition: all 400ms ease;
+}
+
 
 /* Services section */
 
