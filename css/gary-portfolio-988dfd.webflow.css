@@ -206,13 +206,13 @@ figure {
 
 .section {
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #fff;
 }
 
 .section.with-title {
-  padding-top: 104px;
+  padding-top: 50px;
 }
 
 .section.section-bg-color {
@@ -1038,9 +1038,12 @@ figure {
 
 .project-wrapper {
   width: 100%;
-  padding: 95px 0px;
+  margin: 40px 0px;
   display:flex;
   align-items: center;
+  border: solid #A89FE7 5px;
+  border-radius: 5px;
+  background-color: rgba(63, 42, 199, 0.451);
 }
 
 
@@ -1050,8 +1053,9 @@ figure {
   overflow: hidden;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 100%;
-  /* border: solid darkblue 1px; */
+  width: 80%;
+  height:auto;
+
 }
 
 .project-img-overlay {
@@ -3734,3 +3738,17 @@ button {
 ::marker{
   content:'';
 }
+
+.latest-work-text{
+  height:100%;
+  width:50%;
+  padding:15px 15px;
+  color:white;
+}
+
+.latest-work-text h3{
+font-size:32px;
+margin:0px;
+color:white;
+}
+
