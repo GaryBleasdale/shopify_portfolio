@@ -799,8 +799,9 @@ figure {
   right: 0px;
   bottom: 0px;
   display: block;
-  width: 33.3334%;
-  background-color: #4830e6;
+  width: 40%;
+  background-image: url("/images/profile_scaleddown2.webp");
+  background-size:cover;
   -webkit-transform-origin: 100% 50%;
   -ms-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
