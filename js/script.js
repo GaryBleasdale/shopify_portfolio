@@ -15,5 +15,23 @@ $(document).ready(function(){
 });
 });
 
+//hamburguer menu
+
+let mobileMenu=document.body.querySelector(".mobile-menu")
+let mobileHeaderLinks=document.body.querySelector(".mobile-header-links")
+
+
+mobileMenu.addEventListener('click', function(){
+  if (mobileHeaderLinks.style.display==='inline'){
+  mobileHeaderLinks.style.display='none'}else{
+    mobileHeaderLinks.style.display='inline'
+  }
+})
+
+mobileHeaderLinks.addEventListener('click', function(){
+  mobileHeaderLinks.style.display='none'
+})
+
+
 
 
