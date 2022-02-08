@@ -1054,9 +1054,9 @@ figure {
   margin: 40px 0px;
   display:flex;
   align-items: center;
-  border: solid #A89FE7 5px;
+  border: solid #4830E6 5px;
   border-radius: 5px;
-  background-color: rgba(63, 42, 199, 0.451);
+  background-color: #4830E6;
 }
 
 
@@ -3725,8 +3725,10 @@ button {
 .header-links>a{
   display:flex;
   color:black;
+}
 
-
+#book{
+  color:white;
 }
 
 .nav-width-limit{
@@ -3739,7 +3741,7 @@ button {
 }
 
 .navbar-cta{
-  background-color: rgba(72, 48, 230,0.3);
+  background-color: #4830E6;
   padding:15px 20px;
   border-radius: 5px;
   font-size: 18px;
@@ -3748,18 +3750,19 @@ button {
 
 @media screen and (max-width:1127px) {
   .navbar-cta{
-    background-color: rgba(72, 48, 230,0.3);
+    background-color: #4830E6;
     padding:15px 20px;
     border-radius: 5px;
     font-size: 14px;
     font-weight:regular;
+    color:white;
   }
 }
 
 
 
 .navbar-cta:hover{
-  background-color: rgba(72, 48, 230, 0.137);
+  opacity:0.7;
   transition: all 400ms ease;
 }
 
