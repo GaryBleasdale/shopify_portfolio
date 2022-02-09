@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 18px;
+
+  
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  padding:20px;
+}
+
+section{
+  margin:60px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.content{
+  display:flex;
+width:80vw;
+  align-items: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pair{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  height:130px;
+
+}
+
+.clickable a{
+  text-decoration: none;
+  color:black;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.clickable a:hover{
+opacity:0.7;
+}
+
+.pair img{
+  width:100px;
+}
+
+#bleasdale{
+  height:100px;
+  width:460px;
+}
+
+h2{
+  font-size:25px;
+  margin-bottom:35px;
+}
+
+em{
+  color:rgb(36, 15, 224);
+}
+
+@media only screen and (max-width:1200px){
+  section{
+    margin: 60px 20px;
+  }
+
+  .content{
+    justify-content:space-between;
+  }
+
+  #bleasdale{
+    height:90px;
+  }
+}
+
+@media only screen and (max-width:825px){
+  
+.container{
+  padding:0px;
+}
+
+  section{
+    margin: 50px 20px;
+  }
+  
+  .content{
+    justify-content:center;
+  }
+
+  .pair{
+    flex-basis:50%;
+    margin:15px 0px;
+
+  }
+
+  h2{
+    margin-bottom:15px;
+  }
+
+  #bleasdale{
+    height:70px;
+  }
+}

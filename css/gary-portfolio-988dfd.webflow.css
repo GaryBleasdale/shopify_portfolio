@@ -3889,3 +3889,11 @@ button {
     padding-bottom: 15px;
   }
 }
+
+
+#contact{
+  height:80vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
