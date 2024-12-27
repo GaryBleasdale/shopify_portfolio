@@ -40,19 +40,14 @@
     </div>
   </body>
   <script>
-    fetch("nested_repos_calendar.png", { method: "HEAD" })
+    fetch(
+      "http://garybleasdale.com/.netlify/functions/retrieve-last-modified?name=gary",
+      {
+        method: "GET",
+      }
+    )
       .then((response) => {
-        let lastModified = null;
-        for (let entry of response.headers.entries()) {
-          console.log("entry", entry);
-          if (entry[0] === "last-modified") {
-            lastModified = entry[1];
-          }
-        }
-        const lastUpdateUIDisplay =
-          document.getElementById("chart-updated-date");
-        lastUpdateUIDisplay.innerText = `This chart was last updated at: ${lastModified}`;
-        lastUpdateUIDisplay.style.display = "block";
+        console.log(response);
       })
       .catch((error) => console.error("Error fetching the file:", error));
   </script>
