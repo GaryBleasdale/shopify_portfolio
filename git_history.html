@@ -44,6 +44,7 @@
       .then((response) => {
         let lastModified = null;
         for (let entry of response.headers.entries()) {
+          console.log("entry", entry);
           if (entry[0] === "last-modified") {
             lastModified = entry[1];
           }
