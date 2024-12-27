@@ -1,4 +1,4 @@
-import { Handler } from "@netlify/functions";
+import type { Handler } from "@netlify/functions";
 import fs from "node:fs/promises";
 import path from "node:path";
 
